@@ -198,8 +198,7 @@ nav.scrolled{background:rgba(250,250,248,.9);backdrop-filter:blur(16px);border-c
 
 /* ── FLIP CARDS (unchanged) ── */
 #projects{border-top:1px solid var(--rule)}
-.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-@media(max-width:1240px){.grid5{grid-template-columns:repeat(3,1fr)}}
+.grid5{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 @media(max-width:900px){.grid5{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.grid5{grid-template-columns:1fr}}
 .flip{perspective:1600px;height:404px;cursor:pointer}
@@ -914,9 +913,9 @@ body::-webkit-scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:9px;border
 <div id="projects" class="section wide reveal">
   <div class="sec-head"><div class="sec-idx">02</div><div>
     <div class="label">PhD Research</div>
-    <h2 class="section-title">Five projects, <em>in parallel</em></h2>
+    <h2 class="section-title">Six projects, <em>in parallel</em></h2>
   </div></div>
-  <p class="section-sub">Each has its own collaborators and deliverables. I ran all five at once, over three years (with 317 days of microscope downtime).</p>
+  <p class="section-sub">Five research projects, each with its own collaborators and deliverables, plus the lab automation I built to run them all. I ran all five research projects at once, over three years (with 317 days of microscope downtime).</p>
 
   <!-- PLATFORM DIAGRAM -->
   <div class="plat">
@@ -1079,6 +1078,31 @@ body::-webkit-scrollbar-thumb{background:rgba(0,0,0,.2);border-radius:9px;border
         <div class="plabel">What it is</div>
         <p class="pbody">Built automated image-segmentation and scoring pipelines in <strong>Python, MATLAB and GraphPad</strong> with UCL Computer Science and Advanced Research Computing.<br><br>
         Throughput went up by around <strong>50%</strong> and analysis time down by around <strong>40%</strong>. More importantly, scoring stopped depending on who was doing it.</p>
+        <div class="hint"><b>Click to flip back</b> ⟳</div>
+      </div>
+    </div></div>
+
+    <div class="flip"><div class="flip-in">
+      <div class="face">
+        <div class="pnum">Project 06</div>
+        <h3 class="ptitle">Lab Automation &amp; Systems Integration <a href="https://github.com/Jyosthna24/hcs-lab-automation" target="_blank" rel="noopener" onclick="event.stopPropagation()" class="linkpill">GitHub&nbsp;↗</a></h3>
+        <div class="ppartner">Microscope → analysis → report, hands-off</div>
+        <div class="plabel">Systems integrated</div>
+        <ul class="pcollab">
+          <li>ImageXpress + MetaXpress</li>
+          <li>Opera Phenix</li>
+          <li>UCL Myriad HPC cluster</li>
+          <li>Excel · GraphPad Prism · PowerPoint</li>
+          <li>Email / Teams alerts · ELN export</li>
+        </ul>
+        <div class="hint"><b>Click to flip</b> ⟳</div>
+      </div>
+      <div class="face back">
+        <div class="pnum">Project 06</div>
+        <div class="plabel">What it is</div>
+        <p class="pbody">I connected the microscopes <strong>directly to the analysis pipeline</strong>. When a plate finishes, its images and <strong>MetaXpress metadata</strong> are copied and verified automatically.<br><br>
+        The metadata identifies the microscope, applies <strong>its own QC settings</strong>, builds the input file from the plate map and <strong>removes wells the microscope failed to image</strong>. No more manual editing after a fault.<br><br>
+        Analysis runs on the <strong>HPC cluster</strong>, and plates are gated on <strong>Z′</strong>. Results arrive as Excel, Prism, figures and slides, with alerts, a run history with control charts, and ELN export.</p>
         <div class="hint"><b>Click to flip back</b> ⟳</div>
       </div>
     </div></div>
